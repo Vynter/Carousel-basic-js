@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background: #333;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    border: aliceblue 2px solid;
+    width: 840px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    transform: translate(0px);
+    transition: 1s ease;
+}
+
+.outer {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+}
+
+.droite, .gauche {
+    width: 18px;
+    height: 20px;
+    background: honeydew;
+    color: green;
+    position: absolute;
+    z-index: 5;
+}
+
+.droite {
+    left: 95%;
+    top: 50%;
+}
+
+.gauche {
+    right: 95%;
+    top: 50%;
+}
